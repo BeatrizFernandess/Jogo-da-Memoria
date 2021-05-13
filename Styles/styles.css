@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* height: 100vh; */
+  height: 100vh;
   background-image: url(https://i.pinimg.com/originals/df/93/42/df93425de05066b11ac1a5898906f868.jpg);
   background-repeat: no-repeat;
   background-size: cover;
