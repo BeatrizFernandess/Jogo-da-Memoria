@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  background-image: url(https://i.pinimg.com/originals/df/93/42/df93425de05066b11ac1a5898906f868.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(0, 26, 97, 0.938);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.705);
+  width: 100%;
+  height: 45px;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  margin: 5px;
+  display: inline-block;
+}
+
+.banner {
+  margin-top: 25px;
+}
+.banner > img {
+  max-width: 300px;
+}
+
+.card {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  cursor: pointer;
+
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card_back,
+.card_front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.icon {
+  /* width:80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px; */
+}
+
+.flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card_front {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-color: #2772d44d;
+}
+
+.card_back {
+  color: #101c2c;
+  background-color: #995b9ea1;
+  font-size: 30px;
+  /* display: none; */
+}
+
+#gameOver {
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+}
+
+#restart {
+  padding: 20px;
+  font-size: 20px;
+  background-color: yellow;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#gameBoard {
+  max-width: 900px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .game-board {
+    max-width: 400px;
+
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+  .icon {
+    width: 40px;
+  }
+  .card_front,
+  .card_back {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .game-board {
+    max-width: 400px;
+
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+  .icon {
+    width: 40px;
+  }
+  .card_front,
+  .card_back {
+    border-radius: 10px;
+  }
+}
