@@ -16,21 +16,6 @@ body {
   background-size: cover;
 }
 
-header {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgba(0, 26, 97, 0.938);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.705);
-  width: 100%;
-  height: 45px;
-  position: relative;
-  text-align: center;
-}
-
-h1 {
-  margin: 5px;
-  display: inline-block;
-}
-
 .banner {
   margin-top: 25px;
 }
