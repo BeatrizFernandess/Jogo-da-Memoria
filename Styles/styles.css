@@ -143,3 +143,10 @@ body {
     border-radius: 10px;
   }
 }
+
+@media (max-width: 425px) {
+  .card {
+    width: 60px;
+    height: 60px;
+  }
+}
